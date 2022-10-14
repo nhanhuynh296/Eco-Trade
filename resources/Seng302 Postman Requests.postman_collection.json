@@ -1,0 +1,3008 @@
+{
+	"info": {
+		"_postman_id": "b4c07ef4-80a6-47a1-ba92-4c690c971b6a",
+		"name": "Seng302 Postman Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login and Logout existing users",
+			"item": [
+				{
+					"name": "User logout [WARNING logging in again with logout will cause a duplicate session token in Postman]",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "http://localhost:9500",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/logout",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login dgaa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"admin@admin.com\",\n\t\"password\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login existing 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"cja128@uclive.ac.nz\",\n\t\"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login existing 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"sbh94@uclive.ac.nz\",\n\t\"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U1 Registering and Logging in",
+			"item": [
+				{
+					"name": "User registry 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Jimmy\"\n    \"lastName\": \"B\",\n\t\"email\": \"jbs77@uclive.ac.nz\",\n    \"dateOfBirth\": \"1920-09-05\",\n    \"homeAddress\": {\n        \"streetNumber\": \"3/24\",\n        \"streetName\": \"Ilam Road\",\n        \"suburb\": \"Upper Riccarton\",\n        \"city\": \"Christchurch\",\n        \"region\": \"Canterbury\",\n        \"country\": \"New Zealand\",\n        \"postcode\": \"90210\"\n    },\n\t\"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User registry 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Name\",\n    \"middleName\": \"Middle\",\n    \"lastName\": \"Ba\",\n\t\"email\": \"12fssadf4@uclive.ac.nz\",\n    \"dateOfBirth\": \"1800-01-20\",\n    \"homeAddress\": {\n        \"streetNumber\": \"3/24\",\n        \"streetName\": \"Ilam Road\",\n        \"suburb\": \"Upper Riccarton\",\n        \"city\": \"Christchurch\",\n        \"region\": \"Canterbury\",\n        \"country\": \"New Zealand\",\n        \"postcode\": \"90210\"\n    },\n\t\"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User registry BAD email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Fassssssssssssssssssssssssssfffffffffffffffffffffffffffffffffffffffffffffffffffffffffsssssssssssssadfsadfasdfasdfa\",\n    \"lastName\": \"Ba\",\n\t\"email\": \"12asdfassd34@uclive.ac.nz\",\n    \"dateOfBirth\": \"2059-05-12\",\n    \"homeAddress\": {\n        \"streetNumber\": \"3/24\",\n        \"streetName\": \"Ilam Road\",\n        \"suburb\": \"Upper Riccarton\",\n        \"city\": \"Christchurch\",\n        \"region\": \"Canterbury\",\n        \"country\": \"New Zealand\",\n        \"postcode\": \"90210\"\n    },\n\t\"password\": \"word2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login request 1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"jbs77@uclive.ac.nz\",\n\t\"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login request 2",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"12fssadf4@uclive.ac.nz\",\n\t\"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login request ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"admin@admin.com\",\n\t\"password\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User login request BAD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"doesNotExist@uclive.ac.nz\",\n\t\"password\": \"NA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/login",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request a specific user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login check",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Back_Port}}/user/loginCheck",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"user",
+								"loginCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User logout [WARNING logging in again with logout will cause a duplicate session token in Postman] Copy",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "http://localhost:9500",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/logout",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U3 Searching for Users using Name",
+			"item": [
+				{
+					"name": "Request all search results",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/search",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search AND",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/search",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search OR",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/search",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U4 DGAA",
+			"item": [
+				{
+					"name": "Make a user an admin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "http://localhost:9500",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/2/makeadmin",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"2",
+								"makeadmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make invalid user admin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "http://localhost:9500",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/5/makeadmin",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"5",
+								"makeadmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "revoke admin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"value": "cja128@uclive.ac.nz",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Set-Cookie",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "http://localhost:9500",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/1/revokeadmin",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"revokeadmin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U5 Creating Business Accounts",
+			"item": [
+				{
+					"name": "Business creation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"primaryAdministratorId\": 20,\n  \"name\": \"Lumbridge General Store\",\n  \"description\": \"A one-stop shop for all your adventuring needs\",\n  \"address\": {\n    \"streetNumber\": \"3/24\",\n    \"streetName\": \"Ilam Road\",\n    \"suburb\": \"Upper Riccarton\",\n    \"city\": \"Christchurch\",\n    \"region\": \"Canterbury\",\n    \"country\": \"New Zealand\",\n    \"postcode\": \"90210\"\n  },\n  \"businessType\": \"Accommodation and Food Services\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make business admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/makeAdministrator",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"makeAdministrator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove business admin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/removeAdministrator",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"removeAdministrator"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U15 Product Catalogue",
+			"item": [
+				{
+					"name": "Retrieve all products of business",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/products",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Creation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 3,\n  \"name\": \"Watties Baked Beans - 8000g can\",\n  \"description\": \"They speak to me.\",\n  \"manufacturer\": \"Hell\",\n  \"recommendedRetailPrice\": 2000.3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/products",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U16 Product images",
+			"item": [
+				{
+					"name": "U16 Product Images",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Finn/Downloads/image (28).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/products/1/images",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"products",
+								"1",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Image",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/business/1/products/images/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"business",
+								"1",
+								"products",
+								"images",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Thumbnail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/business/1/products/thumbnail/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"business",
+								"1",
+								"products",
+								"thumbnail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listing image",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/images/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"images",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listing thumbnail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/thumbnail/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"thumbnail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "U16 Product Images Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Finn/Downloads/image (28).png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/products/1/images/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"products",
+								"1",
+								"images",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U17 Modify catalogue entries",
+			"item": [
+				{
+					"name": "Modify catalogue entries",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Watties Baked Beans - 420g can\",\r\n  \"description\": \"Baked Beans as they should be.\",\r\n  \"manufacturer\": \"Heinz Wattie's Limited\",\r\n  \"recommendedRetailPrice\": 2.2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/products/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U19 Create inventory",
+			"item": [
+				{
+					"name": "Get inventory item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/inventory",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Inventory Item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productId\": 1,\n  \"quantity\": 34,\n  \"pricePerItem\": 106.5,\n  \"totalPrice\": 221.99,\n  \"manufactured\": \"2020-05-20\",\n  \"sellBy\": \"2022-05-20\",\n  \"bestBefore\": \"2023-05-20\",\n  \"expires\": \"2024-05-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/inventory",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"inventory"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U20 Modify inventory entries",
+			"item": [
+				{
+					"name": "Inventory Modification",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"productId\": 1,\n  \"quantity\": 1,\n  \"pricePerItem\": 6.5,\n  \"totalPrice\": 21.99,\n  \"manufactured\": \"2021-05-20\",\n  \"sellBy\": \"2021-05-20\",\n  \"bestBefore\": \"2021-05-20\",\n  \"expires\": \"2021-05-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/inventory/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"inventory",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U22 List sale",
+			"item": [
+				{
+					"name": "Images",
+					"item": [
+						{
+							"name": "U16 Product Images",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "password",
+										"type": "text",
+										"value": "password",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/Finn/Downloads/image (28).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{Back_Port}}/businesses/1/products/1/images",
+									"host": [
+										"{{Back_Port}}"
+									],
+									"path": [
+										"businesses",
+										"1",
+										"products",
+										"1",
+										"images"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Product Thumbnail",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "email",
+										"type": "text",
+										"value": "cja128@uclive.ac.nz",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"type": "text",
+										"value": "password",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Set-Cookie",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Back_Port}}/business/1/products/thumbnail/1",
+									"host": [
+										"{{Back_Port}}"
+									],
+									"path": [
+										"business",
+										"1",
+										"products",
+										"thumbnail",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listing image",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "email",
+										"type": "text",
+										"value": "cja128@uclive.ac.nz",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"type": "text",
+										"value": "password",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Set-Cookie",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Back_Port}}/images/1",
+									"host": [
+										"{{Back_Port}}"
+									],
+									"path": [
+										"images",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listing thumbnail",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "email",
+										"type": "text",
+										"value": "cja128@uclive.ac.nz",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"type": "text",
+										"value": "password",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Set-Cookie",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Back_Port}}/thumbnail/1",
+									"host": [
+										"{{Back_Port}}"
+									],
+									"path": [
+										"thumbnail",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "UCM Cards",
+					"item": [
+						{
+							"name": "Cards - For Sale",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "email",
+										"type": "text",
+										"value": "cja128@uclive.ac.nz",
+										"disabled": true
+									},
+									{
+										"key": "password",
+										"type": "text",
+										"value": "password",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Set-Cookie",
+										"type": "text",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Back_Port}}/cards?section=ForSale",
+									"host": [
+										"{{Back_Port}}"
+									],
+									"path": [
+										"cards"
+									],
+									"query": [
+										{
+											"key": "section",
+											"value": "ForSale"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Retrieve a business's listings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/listings",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"listings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve a business's listings Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"inventoryItemId\": 1,\r\n  \"quantity\": 3,\r\n  \"price\": 17.99,\r\n  \"moreInfo\": \"Seller may be willing to consider near offers\",\r\n  \"closes\": \"2021-07-21T23:59:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/listings",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"listings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inventory",
+			"item": [
+				{
+					"name": "Cards - Wanted",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/cards?section=Wanted",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"cards"
+							],
+							"query": [
+								{
+									"key": "section",
+									"value": "Wanted"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cards - Exchange",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/cards?section=Exchange",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"cards"
+							],
+							"query": [
+								{
+									"key": "section",
+									"value": "Exchange"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UCM3 Marketplace section display",
+			"item": [
+				{
+					"name": "Get specific card",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "email",
+								"type": "text",
+								"value": "cja128@uclive.ac.nz",
+								"disabled": true
+							},
+							{
+								"key": "password",
+								"type": "text",
+								"value": "password",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Set-Cookie",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/cards/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"cards",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UCM4 Card expiry",
+			"item": [
+				{
+					"name": "Delete card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/cards/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"cards",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Extend card display period",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/cards/8/extenddisplayperiod",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"cards",
+								"8",
+								"extenddisplayperiod"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UCM5 Find my card",
+			"item": [
+				{
+					"name": "For sale",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9499/users/1/cards?section=ForSale&page=1&size=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9499",
+							"path": [
+								"users",
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "section",
+									"value": "ForSale"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exchange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9499/users/1/cards?section=Exchange&page=1&size=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9499",
+							"path": [
+								"users",
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "section",
+									"value": "Exchange"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wanted",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9499/users/1/cards?section=Wanted&page=1&size=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9499",
+							"path": [
+								"users",
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "section",
+									"value": "Wanted"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UCM6 Keyword Management",
+			"item": [
+				{
+					"name": "Get keywords by search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/keywords/search?searchQuery=",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"keywords",
+								"search"
+							],
+							"query": [
+								{
+									"key": "searchQuery",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UCM7 Card Search",
+			"item": [
+				{
+					"name": "Card Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/cards/search?section=ForSale&type=And&keywords=Vehicle",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"cards",
+								"search"
+							],
+							"query": [
+								{
+									"key": "section",
+									"value": "ForSale"
+								},
+								{
+									"key": "type",
+									"value": "And"
+								},
+								{
+									"key": "keywords",
+									"value": "Vehicle"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get keywords by search Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Vehicle3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/keywords",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"keywords"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UCM8 Contacting other marketplace users",
+			"item": [
+				{
+					"name": "New Message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cardId\": 1,\r\n    \"recipientId\": 1,\r\n    \"message\": \"Test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/notifications/message?",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"notifications",
+								"message"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notifications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/notifications",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U10 Modifying Individuals",
+			"item": [
+				{
+					"name": "Edit user detalis",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Smith\",\n  \"middleName\": \"Hector\",\n  \"nickname\": \"Jonny\",\n  \"bio\": \"Likes long walks on the beach\",\n  \"email\": \"johnsmith99@gmail.com\",\n  \"dateOfBirth\": \"1999-04-27\",\n  \"phoneNumber\": \"+64 3 555 0129\",\n  \"homeAddress\": {\n    \"streetNumber\": \"3/24\",\n    \"streetName\": \"Ilam Road\",\n    \"suburb\": \"Upper Riccarton\",\n    \"city\": \"Christchurch\",\n    \"region\": \"Canterbury\",\n    \"country\": \"New Zealand\",\n    \"postcode\": \"90210\",\n    \"countryCurrency\": \"New Zealand\"\n  },\n  \"password\": \"1337-H%nt3r2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Make primary user image",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/users/images/1/makeprimary",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"images",
+								"1",
+								"makeprimary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User image upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/cosc/student/fjb56/Pictures/Screenshot from 2021-04-19 13-46-36.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{Back_Port}}/users/1/images",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"1",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user currency",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/users/currency/1",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"users",
+								"currency",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U30 Individual full sale listing",
+			"item": [
+				{
+					"name": "Get one listing - valid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/listings/:id",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"listings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one listing - invalid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/listings/:id",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"listings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1000000000000000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like a Listing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/listing/:id/like",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"listing",
+								":id",
+								"like"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike a Listing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/listing/:id/unlike",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"listing",
+								":id",
+								"unlike"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U31 - Purchases",
+			"item": [
+				{
+					"name": "Put - Buy listing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/listings/:id",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"listings",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U32 - Managing my feed",
+			"item": [
+				{
+					"name": "Update Tag",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"notificationTagType\": \"Medium Priority\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/notifications/:notificationId/tag",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"notifications",
+								":notificationId",
+								"tag"
+							],
+							"variable": [
+								{
+									"key": "notificationId",
+									"value": "102"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"notificationCategory\": \"STARRED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Back_Port}}/notifications/:notificationId/category",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"notifications",
+								":notificationId",
+								"category"
+							],
+							"variable": [
+								{
+									"key": "notificationId",
+									"value": "102"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Notification by Tag & Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/notifications?notificationType=COMMENT_RECEIVED&notificationTag=MEDIUM_PRIORITY",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"notifications"
+							],
+							"query": [
+								{
+									"key": "notificationType",
+									"value": "COMMENT_RECEIVED",
+									"description": "Omit this for all"
+								},
+								{
+									"key": "notificationTag",
+									"value": "MEDIUM_PRIORITY",
+									"description": "Omit this for all without tag"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U41 Sales Report",
+			"item": [
+				{
+					"name": "Sales Report Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/salesgraph?startDateString=2000-09-01&endDateString=2000-09-02&granulateBy=YEAR",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"salesgraph"
+							],
+							"query": [
+								{
+									"key": "startDateString",
+									"value": "2000-09-01"
+								},
+								{
+									"key": "endDateString",
+									"value": "2000-09-02"
+								},
+								{
+									"key": "granulateBy",
+									"value": "YEAR"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "U42 Sales Graph",
+			"item": [
+				{
+					"name": "Sales Graph Data Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Back_Port}}/businesses/1/salesgraph?startDateString=2000-09-01&endDateString=2021-09-21&granulateBy=WEEK",
+							"host": [
+								"{{Back_Port}}"
+							],
+							"path": [
+								"businesses",
+								"1",
+								"salesgraph"
+							],
+							"query": [
+								{
+									"key": "startDateString",
+									"value": "2000-09-01"
+								},
+								{
+									"key": "endDateString",
+									"value": "2021-09-21"
+								},
+								{
+									"key": "granulateBy",
+									"value": "WEEK"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.variables.get(\"variable_key\");",
+					"pm.collectionVariables.set(\"variable_key\", \"variable_value\");",
+					"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
+					"    console.log(response.json());",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "variable_key",
+			"value": "variable_value"
+		}
+	]
+}

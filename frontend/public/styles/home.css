@@ -1,0 +1,287 @@
+.home-main {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.home-general {
+    display: flex;
+    height: 100%;
+    width: 62%;
+
+    margin-bottom: 3.5%;
+    border-radius: 1%;
+
+    background-color: white;
+    margin-top: 4.5%;
+
+  box-shadow: 0 0.5em 1em -0.125em rgba(93, 117, 68, 0.4), 0 0 0 1px rgba(93, 117, 68, 0.02);
+}
+
+.home-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.marketplace-main {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.marketplace-general {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 65px;
+}
+
+.marketplace-main-container {
+    display: flex;
+    background-color: white;
+    height: 100%;
+    width: 70%;
+
+    margin-bottom: 3.5%;
+    border-radius: 1%;
+
+  box-shadow: 0 0.5em 1em -0.125em rgba(93, 117, 68, 0.4), 0 0 0 1px rgba(93, 117, 68, 0.02);
+}
+
+/*User Home Feed*/
+
+.user-home-general {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.user-home-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 65px;
+}
+
+.user-home-nav-container {
+    background: white;
+
+    width: 207px;
+    height: 217px;
+}
+
+.user-home-feed-container {
+    display: flex;
+    justify-content: center;
+
+    background: white;
+
+    padding-bottom: 1%;
+    border-radius: 1%;
+  box-shadow: 0 0.5em 1em -0.125em rgba(93, 117, 68, 0.4), 0 0 0 1px rgba(93, 117, 68, 0.02);
+}
+
+.feed-component {
+  max-height: 92vh;
+}
+
+.feed-component-container {
+    width: 55vw;
+    min-height: 90vh;
+}
+
+.user-home-feed-cards {
+    width: 80%;
+}
+
+.home-notification-tabs .tab-item {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.home-notification-tabs .tab-content {
+  padding: 0;
+}
+
+.notification-message .textarea, .notification-message .textarea:hover {
+    cursor: default;
+    border-color: #b5b5b5;
+}
+
+.feed-item-component-container {
+    width: 100%;
+}
+
+.archived-component-container {
+    min-height: 90vh;
+    width: 55vw;
+}
+
+.feed-item-star {
+    margin-inline: 1vw;
+    cursor: pointer;
+}
+
+.feed-item-read {
+    cursor: pointer;
+}
+
+.read, .starred, .unread, .archived {
+  padding: 2%;
+  margin: 1%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.18) 4px 0.5em 1em -0.125em, rgba(93, 117, 68, 0.02) 0 0 0 1px;
+}
+
+.read {
+  border: 1px solid #5D7544;
+}
+
+.starred {
+  border: 1px solid gold;
+}
+
+.unread {
+  border: 1px solid #1E95E1;
+}
+
+.archived {
+    border: 1px solid;
+}
+
+.delete-notification .media-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-notification > .delete {
+  top: 1rem !important;
+}
+
+.undo-button {
+  background-color: rgba(10, 10, 10, 0.2) !important;
+  height: 1rem !important;
+  margin-block: 1vh;
+}
+
+.undo-button:hover {
+  background-color: rgba(10, 10, 10, 0.55) !important;
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.feed-item {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+
+.feed-title-deleted {
+    font-size: 18px;
+    font-weight: bold;
+    color: coral;
+}
+
+.feed-title-expiring {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feed-title-starred {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+.feed-title-keyword {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3e8ed0;
+}
+
+.feed-title-liked {
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #e9c118;
+}
+
+.feed-title-liked-sold {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e9c118;
+}
+
+.feed-title-comment-received {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feed-title-general {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feed-title-unliked {
+    font-size: 18px;
+    font-weight: bold;
+    color: #cd5c5c;
+}
+
+.feed-title-bought {
+    font-size: 18px;
+    font-weight: bold;
+    color: #008800;
+}
+
+/* Feed Items*/
+
+.item-header {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    margin-block-end: 2%;
+    cursor: context-menu;
+}
+
+.item-body {
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+.item-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    margin-block: 2%;
+    cursor: context-menu;
+}
+
+
+

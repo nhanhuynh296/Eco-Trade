@@ -1,0 +1,12 @@
+.panel-heading-sales-history {
+    background-color: gray;
+    color: #fff;
+}
+
+.sales-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+}

@@ -1,0 +1,373 @@
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-general {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 4px 0.5em 1em -0.125em, rgba(93, 117, 68, 0.02) 0 0 0 1px;
+
+    margin-top: 55px;
+    width: 39.5vw;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    margin-bottom: 2%;
+}
+
+.profile-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1% 5% 5% 5%;
+}
+
+.profile-business {
+    height: 100%;
+    min-height: 75vh;
+}
+
+.businesses-table {
+    height: 100%;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-preview {
+    display: flex;
+    background-color: white;
+    position: relative;
+
+    top: -14%;
+    padding: 1%;
+    width: 13vw;
+    height: 13vw;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+
+    box-shadow: 6px 6px 6px -6px black, -6px 6px 6px -6px black;
+}
+
+.profile-preview-buttons {
+    margin-top: 85%;
+}
+
+.profile-member-date {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.profile-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.profile-section-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-main-name {
+    display: inline-flex;
+}
+
+.profile-lname, .profile-nname {
+    margin-left: 3%;
+}
+
+.profile-secondary-name {
+    display: inline-flex;
+}
+
+.profile-section-two {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-edit {
+    display: inline-flex;
+    justify-content: space-between;
+    float: right;
+}
+
+.my-card-container {
+    margin-bottom: 3%;
+}
+
+.profile-tabs {
+    padding-bottom: 2%;
+}
+
+/* User Cards Tab */
+
+.user-cards-main-container {
+    height: 90vh;
+    width: 55vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1% 5% 5% 5%;
+}
+
+.user-cards-container {
+    height: 100%;
+    width: 100%;
+}
+
+.user-cards-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #5D7544;
+}
+
+.card-container-overflow {
+    overflow: auto;
+}
+
+.textarea {
+    resize: none !important;
+}
+
+.card-container {
+    height: 70vh;
+}
+
+.user-cards-items {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 1%;
+
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+}
+
+.user-cards-items:hover {
+    transform: scale(1.02);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .profile-cards-pagination {
+        bottom: 5vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 9vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .profile-cards-pagination {
+        bottom: 6vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 10vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .profile-cards-pagination {
+        bottom: 6vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 14vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .profile-cards-pagination {
+        bottom: 6vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 14vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .profile-cards-pagination {
+        bottom: 6vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 14vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .profile-cards-pagination {
+        bottom: 6vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 14vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .profile-cards-pagination {
+        bottom: 11vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 15vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .profile-cards-pagination {
+        bottom: 11vh;
+        position: absolute;
+        width: 35.55vw;
+    }
+
+    .profile-cards-pagination-home {
+        bottom: 18vh;
+        position: absolute;
+        width: 35.55vw;
+
+        right: 27.5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.profile-cards-pagination-buttons {
+    width: 70%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Images Carousel */
+
+.profile-carousel-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile-images-carousel {
+    padding-top: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    max-width: 100%;
+
+}
+
+.profile-upload-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.profile-large-image {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 400px;
+    min-height: 400px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.profile-small-image {
+    max-width: 100%;
+    box-shadow: none !important;
+}
+
+.user-profile-carousel-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

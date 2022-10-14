@@ -1,0 +1,83 @@
+.panel-heading-sales-report {
+  min-width: 100%;
+}
+
+.sales-report-top-column {
+  padding: 1%;
+}
+
+.graph-parent .tile.is-child {
+  margin: 1vh !important;
+}
+
+.small-width {
+  width: 1% !important;
+}
+
+.sales-report-tabs .tab-content {
+  display: none;
+}
+
+.sales-report-tabs li {
+  width: 50%;
+}
+
+.sales-report-table thead tr:first-child th {
+  background: #dbdbdb !important
+}
+
+.is-min-content {
+  height: min-content;
+}
+
+.is-almost-6 {
+  max-width: 58% !important;
+}
+
+.width-17 {
+  width: 17%;
+}
+
+#bar-chart {
+  padding-inline: 5vw;
+}
+
+.revenue-sales-tabs {
+  width: 80%;
+}
+
+.revenue-sales-tabs .tab-content {
+  display: none;
+}
+
+.revenue-sales-tabs li {
+  width: 50%;
+}
+
+.sales-report-table-wrapper {
+  min-height: 57vh;
+}
+
+.sales-report-table .table-wrapper.has-sticky-header {
+  height: 0;
+  flex-grow: 1;
+}
+
+.date-range-picker .input.is-rounded {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.clear-date-button {
+  border-radius: 0 9999px 9999px 0;
+}
+
+.clear-date-icon {
+  margin-right: -5px !important;
+}
+
+@media only screen and (max-width: 769px) {
+  .is-almost-6 {
+    max-width: 100% !important;
+  }
+}

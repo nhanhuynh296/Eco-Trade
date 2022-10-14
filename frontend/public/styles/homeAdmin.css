@@ -1,0 +1,24 @@
+.admin-search-bar-field:focus {
+    outline: 0;
+}
+
+.admin-search-bar-field {
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.admin-search-bar-button {
+    color: white;
+    font-weight: bold;
+    background-color: #262626;
+}
+
+.admin-search-bar-button:hover, .admin-search-bar-button:active {
+    color: #e9c46a;
+}
+
+.admin-search-bar-button:active, .admin-search-bar-button:focus {
+    color: #e9c46a;
+    border-color: #e9c46a;
+}

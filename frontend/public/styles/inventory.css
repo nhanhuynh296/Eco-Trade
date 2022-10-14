@@ -1,0 +1,82 @@
+.panel-heading-yellow {
+    background-color: #E8C468;
+    color: #fff;
+}
+
+.panel-heading-green {
+    overflow-wrap: anywhere;
+    background-color: #9dac8e !important;
+}
+
+.panel-heading-greenish {
+    background-color: #9dac8e;
+    color: #fff;
+}
+
+/* Create inventory Product */
+.inventory-item-title {
+    overflow-wrap: anywhere;
+    color: white;
+    font-weight: bold;
+}
+
+.inventory-item-create-info {
+    min-width: 50%
+}
+
+.inventory-item-create-required-fields-key {
+    font-weight: bold;
+    font-size: small;
+
+    padding-bottom: 1%;
+    text-align: right;
+}
+
+.inventory-date-picker-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inventory-date-picker {
+    width: 49%;
+}
+
+.inventory-item-create-button {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+/* Used to make b-datepicker appear in front of other components */
+.modal .animation-content .modal-card {
+    overflow: visible !important;
+}
+
+/* Used to make b-datepicker appear in front of other components */
+.modal-card-body {
+    overflow: visible;
+}
+
+.b-tabs .tabs {
+    overflow: visible;
+}
+
+.b-tabs .tabs li.is-disabled {
+    pointer-events: auto;
+}
+
+.b-tabs .tabs li.is-disabled a:active {
+    pointer-events: none;
+}
+
+.custom-tooltip {
+    text-align: center;
+    width: 100%;
+}
+
+.tab-icons {
+    position: relative;
+    top: 4px;
+    left: 4px;
+}

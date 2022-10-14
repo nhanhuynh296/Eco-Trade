@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Description for jwt.secret."
+    },
+    {
+      "name": "dgaaCheck.fixedRate.in.milliseconds",
+      "type": "java.lang.Integer",
+      "description": "DGAA check exists rate."
+    },
+    {
+      "name": "dgaaCheck.initialDelay.in.milliseconds",
+      "type": "java.lang.String",
+      "description": "Initial delay for checking DGAA exists."
+    },
+    {
+      "name": "dgaa.user",
+      "type": "java.lang.String",
+      "description": "Default username for DGAA user."
+    },
+    {
+      "name": "dgaa.pass",
+      "type": "java.lang.String",
+      "description": "Default password for DGAA user."
+    },
+    {
+      "name": "wasteless.images.rootdir",
+      "type": "java.lang.String",
+      "description": "Root directory to store images at."
+    },
+    {
+      "name": "wasteless.images.productdir",
+      "type": "java.lang.String",
+      "description": "Directory for product images."
+    },
+    {
+      "name": "wasteless.images.thumbnail.scale",
+      "type": "java.lang.Integer",
+      "description": "Scaling for thumbnail images."
+    },
+    {
+      "name": "wasteless.images.userdir",
+      "type": "java.lang.String",
+      "description": "Directory for user images."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+/* Buttons */
+
+.login-button-cancel {
+    float: left;
+}
+
+.login-button-signup {
+    float: right;
+}
+
+.login-button-login {
+    float: right;
+    padding-left: 2%;
+}
+
+.required-fields-key {
+    font-size: small;
+}
+
+.register-button-cancel {
+    float: left;
+}
+
+.register-button-signup {
+    float: right;
+    padding-left: 2%;
+}
+
+.register-button-login {
+    float: right;
+}
+
+/* Login && Register */
+
+.login-container, .register-container {
+    min-height: 100%;
+    width: 100%;
+
+    background-image: url("../assets/top_view_trees.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.login-logo {
+    height: 65px;
+    width: auto;
+}
+
+/* Login */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+
+    margin: 15% auto auto;
+
+    padding: 1%;
+    border-radius: 2%;
+
+    min-width: 18%;
+}
+
+.login-header {
+    padding-bottom: 3%;
+
+    font-weight: bold;
+    font-size: 300%;
+    display: inline-flex;
+}
+
+.login-input {
+    display: inline-flex;
+    flex-direction: column;
+
+    padding-top: 2%;
+}
+
+.login-buttons {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+/* Register */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100%;
+    width: auto;
+}
+
+.register-ancestor {
+    max-width: 70vw;
+}
+
+.register-form {
+    display: inline-flex;
+    justify-content: space-between;
+
+    height: 70%;
+    width: 60%;
+}
+
+.register-section-one {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    order: 1;
+
+    padding: 2%;
+    border-radius: 2%;
+    margin: 1vh;
+    width: 100%;
+}
+
+.register-section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background-color: white;
+    order: 2;
+
+    padding: 2%;
+    border-radius: 2%;
+
+    width: 100%;
+    overflow-y: auto;
+    margin: 1vh;
+}
+
+.register-section-name-image {
+    display: inline-flex;
+    margin-bottom: 2%;
+}
+
+.register-section-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+}
+
+.required-fields-key {
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.preview-field {
+    margin-right: 3%;
+    width: 220px;
+}
+
+.profile-image-preview {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.file-upload {
+    align-self: flex-end;
+}
+
+.file-name {
+    background-color: white;
+    max-width: 147px;
+}
+
+.register-bio {
+    height: 55%;
+}
+
+.register-bio-input {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-bio .textarea:not([rows]){
+    flex-grow: 1;
+    flex-shrink: 1;
+    resize: none;
+}
+
+.address-part-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.register-dob {
+    width: 29%;
+}
+
+.register-phone-number {
+    width: 69%;
+}
+
+.register-city {
+    width: 64%;
+}
+
+.register-postcode {
+    width: 34%;
+}
+
+.register-street-number {
+    width: 34%;
+}
+
+.register-street-name {
+    width: 64%;
+}
+
+.address-part-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 769px) {
+    .register-ancestor {
+        max-width: 90vw;
+    }
+}

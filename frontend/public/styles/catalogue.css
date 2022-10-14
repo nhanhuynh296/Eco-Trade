@@ -1,0 +1,127 @@
+.panel-heading-blue {
+    background-color: #A4CAEB;
+    color: #fff;
+}
+
+/* Product Create Page */
+.product-create-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-create-general {
+    display: flex;
+    justify-content: center;
+}
+
+.product-create-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 0.5em 1em -0.125em rgba(93, 117, 68, 0.4), 0 0 0 1px rgba(93, 117, 68, 0.02);
+
+    width: 60%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.product-create-title {
+    color: white;
+    font-weight: bold;
+}
+
+.product-create-form {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll !important;
+}
+
+.product-edit-form {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll !important;
+}
+
+.product-create-form::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+}
+
+.product-create-form::-webkit-scrollbar-thumb {
+    background-color: #A4CAEB;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+/* Product Modify Page */
+.image-gallery-column {
+    width: 250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.b-image-wrapper {
+    background-size: cover;
+}
+
+.carousel-slide {
+    display: flex;
+    min-width: 25%;
+    max-height: 130px;
+    min-height: 130px;
+}
+
+.primary-image {
+    padding-bottom: 10px;
+    display: flex;
+    max-width: 100%;
+    max-height: 630px;
+    min-height: 630px;
+    border-radius: 10%;
+}
+
+.primary-image-listing {
+    padding-bottom: 10px;
+    max-width: 30vw;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+}
+
+.primary-image-tag {
+    justify-content: right;
+}
+
+.is-active .al img {
+    border: 1px solid #fff;
+    filter: grayscale(0%);
+}
+.al img {
+    border: 1px solid transparent;
+    filter: grayscale(100%);
+}
+
+.modal-card-with-image {
+     width: calc(100vh - 25px);
+     height: calc(80vh - 25px);
+ }
+
+
+.product-create-required-fields-key {
+    font-weight: bold;
+    font-size: small;
+
+    padding-bottom: 1%;
+    text-align: right;
+}
+
+.product-create-button {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}

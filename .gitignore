@@ -1,0 +1,51 @@
+server/HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code / eclipse###
+.vscode/
+.settings/
+bin/
+
+### Backend
+backend/src/main/resources/vars.properties
+backend/src/main/resources/database/
+backend/src/test/artifacts
+
+### Frontend
+frontend/package-lock.json
+frontend/coverage/
+frontend/.scannerwork/
+dist/
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+### LOGS ###
+logs/

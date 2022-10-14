@@ -1,0 +1,91 @@
+.user-profile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-profile-general {
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+
+    margin-top: 2.5%;
+    width: 39.5vw;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.user-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1% 5% 5% 5%;
+}
+
+.profile-tabs, .user-profile-tabs {
+    margin-top: 2%;
+}
+
+.user-image {
+    display: flex;
+    justify-content: center;
+}
+
+.user-preview {
+    display: flex;
+    background-color: white;
+    position: relative;
+
+    top: -14%;
+    padding: 1%;
+    width: 35%;
+    height: 112%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+    /*box-shadow: 6px 8px 6px -6px black, -6px 0 8px -6px black;*/
+    box-shadow: 6px 6px 6px -6px black, -6px 6px 6px -6px black;
+}
+
+.user-member-date {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.user-section-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-name {
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.user-section-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-basic {
+    padding-right: 5%;
+}
+
+.user-contact {
+    padding-left: 5%;
+}

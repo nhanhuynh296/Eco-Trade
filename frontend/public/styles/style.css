@@ -1,0 +1,321 @@
+html {
+    overflow-y: auto;
+    overflow-x: auto;
+
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+
+    background-image: url("../assets/backdrop.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+    height: 100vh;
+}
+
+.white {
+    color: white;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+}
+
+/* NavBar */
+
+.logo {
+    min-height: 3.5vh;
+}
+
+.navbar-container {
+    border-bottom: 0.4vh solid #5D7544;
+    position: fixed;
+    width: 100vw;
+    height: 4.8vh;
+
+    background-image: url("../assets/navbar.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-menu {
+    background-image: url("../assets/navbar.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.notification {
+    padding: 0.1rem 1rem;
+}
+
+#user-thumbnail {
+    width: 30px;
+    height: 30px;
+}
+
+#user-thumbnail > img {
+    border-radius: 50%;
+}
+
+/* NavBar divs */
+
+.navbar-login-signup {
+}
+
+.navbar-logout {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.notifications-title {
+    text-align: center;
+}
+
+.notification-icon {
+    margin-top: 0.6vh;
+}
+
+.user-notifications {
+    width: 50vh;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+.user-notifications-message-info, .user-notifications-message-warning {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.7rem;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.round-button {
+    border-radius: 100% !important;
+    background-color: rgba(10, 10, 10, 0.2);
+    border-color: transparent;
+    color: white;
+}
+
+.round-button:hover {
+    color: white;
+    background: rgba(10, 10, 10, 0.3);
+
+}
+
+.user-notifications-message-info:hover {
+    background-color: #b9d8f7 !important;
+    cursor: pointer;
+}
+
+.user-notifications-message-warning:hover {
+    background-color: #fae59a !important;
+    cursor: pointer;
+}
+
+.user-notifications-message-info .media, .user-notifications-message-warning .media {
+    width: 100%;
+}
+
+.user-notifications-message-info .media .media-content, .user-notifications-message-warning .media .media-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.user-notifications-data {
+    display: block;
+    padding: 2%;
+    width: 100%;
+    white-space: pre-line;
+    word-wrap: anywhere;
+}
+
+
+/* NavBar buttons */
+
+.navbar-search-bar {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: none;
+    font-size: 15px;
+    padding: 2px 2px 2px 32px;
+    width: 5vw;
+    height: 36px;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.navbar-search-bar:focus, .navbar-search-bar:active {
+    width: 20vw;
+    background-color: #fff;
+    outline: none;
+}
+
+.navbar-search-bar-text {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+
+    background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 2px 2px 2px 32px;
+    width: 15vw;
+    height: 36px;
+}
+
+.login-button-div {
+    margin-left: 5%;
+}
+
+.logout-button-div {
+    display: flex;
+    float: right;
+}
+
+.login-button, .signup-button {
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #e9c46a;
+}
+
+.user-search-button {
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.navbar-button-name {
+    font-size: 18px;
+}
+
+.home-button:hover, .user-search-button:hover {
+    color: #e9c46a;
+    border-color: #262626;
+}
+
+.user-search-button:active, .user-search-button:focus, .user-search-button::after {
+    color: #e9c46a;
+    border: none;
+}
+
+.user-options {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: flex;
+    margin-right: 50%;
+    padding-right: 36%;
+    width: 150%;
+}
+
+.user-options:hover, .user-options:active {
+    color: #e9c46a;
+    font-weight: bold;
+}
+
+.signup-button:hover, .login-button:hover {
+    color: #e9c46a;
+    border: 2px solid #e9c46a;
+}
+
+.signup-button:active, .login-button:active {
+    color: #e9c46a;
+    border: 2px solid #e9c46a;
+}
+
+.overlay-center {
+    z-index: 100;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-top-right {
+    z-index: 100;
+    text-align: center;
+    align-content: end;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-110%, 0);
+}
+
+.overlay-top-left {
+    z-index: 100;
+    text-align: center;
+    align-content: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 0);
+}
+
+.b-table .table:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.user-name-span, .business-name-span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-name-span {
+    max-width: 180px;
+}
+
+.business-name-span {
+    max-width: 240px;
+}

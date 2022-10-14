@@ -1,0 +1,604 @@
+.market-container {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 1%;
+}
+
+/* Marketplace Keyword Search */
+
+.search-keyword-input-wrapper {
+    display: flex;
+  height: 100%;
+  margin: 5%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.search-keyword-input {
+  width: 100%;
+}
+
+.search-keyword-input .taginput-container {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+#match-any {
+  margin-right: 5%;
+}
+
+.keyword-clear-btn {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.search-keyword-input-wrapper .field {
+    width: 100%;
+    margin: 0.2vh 0.2vh 0.2vh 0.5vh;
+}
+
+.search-keyword-input-wrapper .field .control {
+    width: 100%;
+}
+
+.keyword-toggle-wrapper {
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+}
+
+/* Marketplace Cards */
+.marketplace-sale-main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.marketplace-sale-filter-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1vw;
+    max-width: 11vw;
+}
+
+.for-sale-filter-title {
+    padding-bottom: 1vh;
+    font-weight: bold;
+    font-size: large;
+}
+
+.marketplace-sale-filter-dropdown {
+    padding-bottom: 1vh;
+}
+
+.marketplace-sale-filter-dropdown-button {
+    width: 11vw;
+    font-size: 1rem;
+}
+
+.location-filter-header-wrapper {
+    max-height: 2.5em;
+}
+
+.card-delete-btn {
+    position: absolute;
+    top: 5%;
+    left: 10.5vw;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.marketplace-sale-item-title {
+    font-weight: bold;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.add-item-btn-wrapper {
+    padding-block: 1vh;
+}
+
+.marketplace-sale-pagination {
+    bottom: 3%;
+    padding: 1vh;
+}
+
+. marketplace-pagination-buttons {
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.marketplace-sale-items-container {
+    height: 70vh;
+    width: 48.8vw;
+}
+
+.marketplace-items-overflow {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    /*flex-grow: 1;*/
+}
+
+.marketplace-sale-items {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+}
+
+.marketplace-sale-items:hover {
+    transform: scale(1.02);
+}
+
+/* CARDS */
+
+.card-description {
+    overflow-wrap: anywhere;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 0.8rem;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-btns {
+    display: inline-block;
+    width: 100%;
+}
+
+.delete-btn {
+    width: 50%;
+    border-radius: 0 4px 0 0;
+}
+
+.edit-btn {
+    width: 50%;
+    border-radius: 4px 0 0 0;
+}
+
+.renew-btn {
+    width: 100%;
+}
+
+/* Filtering Side Bar*/
+.location-filter-header-title {
+    font-weight: 400;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.location-clear-btn {
+    width: 100%;
+}
+
+.marketplace-sale-apply-filter {
+    width: 100%;
+}
+
+/* Create Card Popup */
+.modal-card-head {
+    background-color: #9dac8e;
+}
+
+/* Card Create Page*/
+.card-create-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-create-general {
+    display: flex;
+    justify-content: center;
+}
+
+.card-create-main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 8px 6px -6px black;
+
+    width: 60vh;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.card-create-title {
+    color: white;
+    font-weight: bold;
+}
+
+.card-create-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-create-required-fields-key {
+    font-weight: bold;
+    font-size: small;
+
+    padding-bottom: 1%;
+    text-align: right;
+}
+
+.card-create-button {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+/* CARD POPUP */
+.full-modal-wrapper {
+    width: 75%;
+    height: 100%;
+
+    margin: auto;
+}
+
+.cm-card-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.cm-card-left-col {
+    min-width: 60%;
+    z-index: 1;
+    white-space: nowrap;
+    text-align: center;
+    background: #0a0a0ab3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.cm-card-img {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    vertical-align: middle;
+    max-height: 100%;
+}
+
+.cm-card-right-col {
+    min-width: 40%;
+    overflow-y: auto;
+    background: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.right-col-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-heading-cm-card-popup {
+    background-color: #d9e0d1;
+    color: black !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 6px 5px -6px black;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.cm-card-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.cm-card-subtitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cm-card-body {
+    padding: 1vh 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+}
+
+.cm-card-body-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-subtitle {
+    margin-block: 0.5vh;
+    font-size: 1.1rem;
+}
+
+.card-popup-description {
+    overflow: auto;
+    overflow-wrap: anywhere;
+}
+
+.card-popup-date {
+    display: inline-flex;
+}
+
+.card-popup-date-text {
+    display: inline-flex;
+    flex-direction: row;
+
+    color: red;
+    width: 9vw;
+}
+
+.card-popup-date-buttons {
+    display: inline-flex;
+    margin-left: 3%;
+}
+
+.card-popup-date-button {
+    margin-left: 4%;
+}
+
+.taglist {
+    margin-top: 1vh;
+}
+
+.card-creator-wrapper {
+  /*margin-top: 1vh;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.card-creator {
+    padding-left: 1vw;
+}
+
+.card-creator-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #9dac8e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-creator-name:hover {
+    color: black;
+}
+
+.cm-card-footer {
+  border-bottom-left-radius: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 22%;
+  flex-shrink: 1;
+  flex-basis: 12%;
+
+}
+
+.send-msg-label {
+    width: 100%;
+    margin-bottom: 0.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.send-msg-field {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.send-msg-input .textarea {
+    resize: none;
+}
+
+.send-msg-input .textarea[disabled] {
+    background-color: #d3d2d2;
+    border-color: #bdbdbd;
+}
+
+#message-sent-label {
+    margin-right: 0.5vw;
+}
+
+#msg-success-btn {
+    cursor: default;
+    width: 100%;
+    background: green;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */
+{
+    opacity: 0
+}
+
+.profile-thumbnail {
+    object-fit: cover;
+    width: 5vh;
+    height: 5vh;
+    padding-left: 0.8rem;
+}
+
+hr {
+    margin-block: 0.5rem;
+}
+
+/*Scroll bars*/
+.card-popup-description::-webkit-scrollbar, .cm-card-right-col::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+.card-popup-description::-webkit-scrollbar-track, cm-card-right-col::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: gray;
+}
+
+
+.card-popup-description::-webkit-scrollbar-thumb, cm-card-right-col::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #d9e0d1;
+}
+
+/*Card container styles*/
+
+.card-filter-container {
+    display: block;
+    text-align: center;
+    padding: 2%;
+}
+
+.card-filter-components {
+    display: inline-block;
+    margin: auto;
+    padding: 2%;
+}
+
+.pagination-info-center {
+    text-align: center;
+    padding: 2vh;
+}
+
+/*Marketplace container styles*/
+
+.market-cards-container {
+    overflow-y: auto;
+}
+
+.market-card-container {
+    width: 11vw;
+    height: 20vh;
+}
+
+.market-card-container-market-place {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.marketplace-buttons-container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.filter-container-item {
+    margin-block: 5%
+}
+
+/* Marketplace filter styles */
+
+.market-section-container {
+    min-height: 80vh;
+}
+
+.marketplace-cards {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 1%;
+
+    width: 23%;
+    height: 42%;
+
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+}
+
+.marketplace-cards:hover {
+    transform: scale(1.02);
+}
+
+.add-item-container {
+    max-width: 20%;
+}
+
+.filter-btn {
+    width: 100%;
+}
+
+.sort-container {
+    width: 10%;
+}
+
+.sort-dropdown-button {
+    width: 100%;
+}
+.card-popup-main-container {
+    max-width: 60rem;
+    margin: auto!important;
+    border-radius: 5%!important;
+}
+
+.card-popup-container {
+    border-radius: 1%;
+}
+
+@media only screen and (max-width: 769px) {
+    .market-cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marketplace-cards {
+        width: 100%;
+        margin-block: 2vh !important;
+    }
+}
